@@ -78,3 +78,12 @@ taobao.userBuyerGet({
 </code>
 </pre>
 
+<h3>类目API</h3>
+<ul>
+	<li>taobao.itemcatsAuthorizeGet</li>
+	<li>taobao.itemcatsGet</li>
+	<li>taobao.itemcatsIncrementGet</li>
+	<li>taobao.itempropsGet</li>
+	<li>taobao.itempropvaluesGet</li>
+	<li>taobao.topatsItemcatsGet</li>
+</ul>
