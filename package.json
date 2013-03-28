@@ -2,17 +2,21 @@
 	"name" : "taobao",
 	"description" : "node implementations for taobao open api",
 	"keywords":["taobao","taobaoke","top","open","api"],
-	"version" : "0.0.1",
+	"version" : "0.0.2",
+	"homepage": "http://github.com/blacktail/taobao.git",
 	"author" : {
-		"name" : "Percy",
+		"name" : "blacktail",
 		"email" : "mr.zhangping@gmail.com"
+	},
+	"repository":{
+		"type" : "git",
+		"url" : "http://github.com/blacktail/taobao.git"
 	},
 	"main": "./index",
 	"contributors" : [{
-		"name" : "Percy",
+		"name" : "blacktail",
 		"email" : "mr.zhangping@gmail.com"
 	}],
-	"private" : true,
 	"dependencies" : {
 		"underscore": "~1.4.4",
 		"moment": "~2.0.0",
