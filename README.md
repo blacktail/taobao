@@ -9,7 +9,6 @@ node implementations for taobao open api
 npm install taobao
 
 2 使用
-<pre>
 
 <code>
 var taobao = require('taobao');
@@ -36,7 +35,6 @@ taobao.updateSession('6101e23eb4c2155676b33cbf44866971819903c86eb9a0945892274');
 	<li>taobao.core.signArgs</li>
 	<li>taobao.core.callDefaultArg</li>
 </ul>
-<samp>
 <code>
 taobao.core.call({
 	method: 'get',				//指定http method, 各个API不一样，请参阅淘宝API文档
@@ -53,8 +51,6 @@ taobao.core.call({
 	console.log(data)
 });
 </code>
-</samp>
-
 
 <h3>用户API</h3>
 <ul>
@@ -63,7 +59,6 @@ taobao.core.call({
 	<li>taobao.userSellerGet</li>
 	<li>taobao.usersGet</li>
 </ul>
-<samp>
 <code>
 taobao.userBuyerGet({
 	fields: 'user_id,nick,sex,buyer_credit,avatar,has_shop,vip_info'
@@ -71,6 +66,5 @@ taobao.userBuyerGet({
 	console.log(data);
 });
 </code>
-</samp>
 
-</pre>
+
