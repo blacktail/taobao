@@ -4,7 +4,7 @@ taobao sdk
 taobao openapi sdk for node
 
 1 安装
-npm install taobao
+npm install taobao 
 
 
 2 使用
