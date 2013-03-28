@@ -1,8 +1,8 @@
 var _ = require('underscore'),
 	core = require('./lib/core'),
 	user = require('./lib/user'),
-	itemcats = require('./lib/itemcats');
-
+	itemcats = require('./lib/itemcats'),
+	item = require('./lib/item');
 
 module.exports = {
 	config: function (config) {
@@ -18,4 +18,4 @@ module.exports = {
 	core: core
 };
 
-_.extend(module.exports, user, itemcats);
+_.extend(module.exports, user, itemcats, item);
