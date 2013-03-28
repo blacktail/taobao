@@ -1,7 +1,7 @@
-taobao
+taobao sdk
 ======
 
-node implementations for taobao open api
+taobao openapi sdk for node
 
 1 安装
 npm install taobao
