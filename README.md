@@ -3,10 +3,9 @@ taobao
 
 node implementations for taobao open api
 
-用法：
-
 1 安装
 npm install taobao
+
 
 2 使用
 
@@ -31,7 +30,7 @@ taobao.config({
 <h3>taobao.updateSession</h3>
 <pre>
 <code>
-// 更新sessio， 也可使用taobao.config配置
+// 更新session， 也可使用taobao.config配置
 taobao.updateSession('6101e23eb4c2155676b33cbf44866971819903c86eb9a0945892274');
 </code>
 </pre>
