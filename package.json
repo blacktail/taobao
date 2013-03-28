@@ -1,0 +1,24 @@
+{
+	"name" : "taobao",
+	"description" : "node implementations for taobao open api",
+	"keywords":["taobao","taobaoke","top","open","api"],
+	"version" : "0.0.1",
+	"author" : {
+		"name" : "Percy",
+		"email" : "mr.zhangping@gmail.com"
+	},
+	"main": "./index",
+	"contributors" : [{
+		"name" : "Percy",
+		"email" : "mr.zhangping@gmail.com"
+	}],
+	"private" : true,
+	"dependencies" : {
+		"underscore": "~1.4.4",
+		"moment": "~2.0.0",
+		"MD5": "~1.0.3"
+	},
+	"engines": {
+    	"node": ">=0.4.0"
+    }
+}
