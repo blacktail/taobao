@@ -15,6 +15,7 @@ npm install taobao
 var taobao = require('taobao');
 </code>
 
+<h3>taobao.config</h3>
 <code>
 taobao.config({
 	app_key: 'xxx',				//配置app key
@@ -23,8 +24,21 @@ taobao.config({
 });
 </code>
 
+<h3>taobao.updateSession</h3>
 <code>
-api.call({
+taobao.updateSession('6101e23eb4c2155676b33cbf44866971819903c86eb9a0945892274');
+</code>
+
+<h3>核心API</h3>
+<ul>
+	<li>taobao.core.config</li>
+	<li>taobao.core.call</li>
+	<li>taobao.core.signArgs</li>
+	<li>taobao.core.callDefaultArg</li>
+</ul>
+<samp>
+<code>
+taobao.core.call({
 	method: 'get',				//指定http method, 各个API不一样，请参阅淘宝API文档
 	protocol: 'http'			//指定协议，支持http, https
 }, {
@@ -39,4 +53,24 @@ api.call({
 	console.log(data)
 });
 </code>
+</samp>
+
+
+<h3>用户API</h3>
+<ul>
+	<li>taobao.userBuyerGet</li>
+	<li>taobao.userGet</li>
+	<li>taobao.userSellerGet</li>
+	<li>taobao.usersGet</li>
+</ul>
+<samp>
+<code>
+taobao.userBuyerGet({
+	fields: 'user_id,nick,sex,buyer_credit,avatar,has_shop,vip_info'
+}, function(data) {
+	console.log(data);
+});
+</code>
+</samp>
+
 </pre>
