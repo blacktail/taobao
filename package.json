@@ -2,7 +2,7 @@
 	"name" : "taobao",
 	"description" : "node implementations for taobao open api",
 	"keywords":["taobao","taobaoke","TOP","openapi","node-taobao", "TaobaoClient"],
-	"version" : "0.0.5",
+	"version" : "0.0.6",
 	"homepage": "http://github.com/blacktail/taobao.git",
 	"author" : {
 		"name" : "blacktail",
