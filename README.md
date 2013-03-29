@@ -28,7 +28,7 @@ taobao.config({
 #### taobao.updateSession
 
 ```javascript
-taobao.updateSession('6101e23eb4c2155676b33cbf44866971819903c86eb9a0945892274');
+taobao.updateSession('xxxxx');
 ```
 
 #### 核心API</h3>
@@ -74,4 +74,11 @@ taobao.userBuyerGet({
 3. taobao.itemcatsIncrementGet
 4. taobao.itempropsGet
 5. taobao.itempropvaluesGet
-6. taobao.topatsItemcatsGet</li>
+6. taobao.topatsItemcatsGet
+
+
+#### 商品API
+
+#### 交易API
+
+#### 评价API
