@@ -162,6 +162,37 @@ taobao.userBuyerGet({
 3. traderateListAdd
 4. traderatesGet
 
+#### 物流API
+1. alibabaLogisticsOrderCancel
+2. alibabaLogisticsOrderCharge
+3. alibabaLogisticsOrderConsign
+4. alibabaLogisticsRouteQuery
+5. areasGet
+6. deliveryTemplateAdd
+7. deliveryTemplateDelete
+8. deliveryTemplateGet
+9. deliveryTemplateUpdate
+10. deliveryTemplatesGet
+11. logisticsAddressAdd
+12. logisticsAddressModify
+13. logisticsAddressRemove
+14. logisticsAddressSearch
+15. logisticsCompaniesGet
+16. logisticsConsignResend
+17. logisticsDummySend
+18. logisticsOfflineSend
+19. logisticsOnlineCancel
+20. logisticsOnlineConfirm
+21. logisticsOnlineSend
+22. logisticsOrdersDetailGet
+23. logisticsOrdersGet
+24. logisticsOrderstorePush
+25. logisticsOrdertracePush
+26. logisticsPartnersGet
+27. logisticsTraceSearch
+28. topatsDeliverySend
+
+
 ## Q & A
 1. *为什么设置sandbox为true时，获取返回数据时发生错误(比如404之类)，而在真实环境中正常？*
 	- 解决方案
@@ -174,3 +205,27 @@ taobao.userBuyerGet({
 	- taobao.core.call是底层接口，因此任何使用具体API函数的地方都可用taobao.core.call来替代
 	- 像taobao.itemcatsAuthorizeGet这样的具体API函数，可以认为是taobao.core.call的快捷方法，方便开发者调用
 	- sdk一直在更新，有些api方法还没包含在sdk中，这时只能通过taobao.core.call来进行调用
+
+
+##LICENSE
+
+```
+Copyright(c) 2013 blacktail
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files(the "Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and / or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT.IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.``
