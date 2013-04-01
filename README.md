@@ -92,13 +92,14 @@ taobao.userBuyerGet({
 #### 评价API
 
 ## Q & A
-1. 为什么设置sandbox为true时，获取返回数据时发生错误(比如404之类)，而在真实环境中是可以的？
+1. *为什么设置sandbox为true时，获取返回数据时发生错误(比如404之类)，而在真实环境中正常？*
 	- 解决方案
 		1. 淘宝sandbox API接口地址发生变化, 可通过taobao.config配置最新地址
 			- 配置项：httpSandHost, httpSandPath, httpsSandHost, httpsSandPath
 		2. 淘宝sandbox未实现正在调用的API,请设置sandbox为false
 
-2. taobao.core.call与具体类别的API函数是什么关系？
+
+2. *taobao.core.call与具体类别的API函数是什么关系？*
 	- taobao.core.call是底层接口，因此任何使用具体API函数的地方都可用taobao.core.call来替代
 	- 像taobao.itemcatsAuthorizeGet这样的具体API函数，可以认为是taobao.core.call的快捷方法，方便开发者调用
 	- sdk一直在更新，有些api方法还没包含在sdk中，这时只能通过taobao.core.call来进行调用
