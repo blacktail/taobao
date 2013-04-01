@@ -18,10 +18,18 @@ var taobao = require('taobao');
 
 ```javascript
 taobao.config({
-	app_key: 'xxx',				//配置app key
-	app_secret: 'xxx',			//配置app secret
-	sandbox: false,				//配置是否为沙箱环境
-	session: ''					//配置session
+	app_key: 'xxx',							//配置app key
+	app_secret: 'xxx',						//配置app secret
+	sandbox: false,							//配置是否为沙箱环境
+	session: '',							//配置session
+	httpRealHost: null,						//配置真实环境http HOST,默认为gw.api.taobao.com
+	httpRealPath: '/router/rest',			//配置真实环境http Path,默认为/router/rest
+	httpSandHost: 'gw.api.tbsandbox.com',	//配置沙箱环境http HOST,默认为gw.api.tbsandbox.com
+	httpSandPath: '/router/test',			//配置沙箱环境http Path,默认为/router/rest
+	httpsRealHost: 'eco.taobao.com',		//配置真实环境https HOST,默认为eco.taobao.com
+	httpsRealPath: '/router/rest',			//配置真实环境https Path,默认为/router/rest
+	httpsSandHost: 'gw.api.tbsandbox.com',	//配置沙箱环境https HOST,默认为gw.api.tbsandbox.com
+	httpsSandPath: '/'						//配置沙箱环境https Path,默认为/
 });
 ```
 
@@ -82,3 +90,15 @@ taobao.userBuyerGet({
 #### 交易API
 
 #### 评价API
+
+## Q & A
+1. 为什么设置sandbox为true时，获取返回数据时发生错误(比如404之类)，而在真实环境中是可以的？
+	- 解决方案
+		1. 淘宝sandbox API接口地址发生变化, 可通过taobao.config配置最新地址
+			- 配置项：httpSandHost, httpSandPath, httpsSandHost, httpsSandPath
+		2. 淘宝sandbox未实现正在调用的API,请设置sandbox为false
+
+2. taobao.core.call与具体类别的API函数是什么关系？
+	- taobao.core.call是底层接口，因此任何使用具体API函数的地方都可用taobao.core.call来替代
+	- 像taobao.itemcatsAuthorizeGet这样的具体API函数，可以认为是taobao.core.call的快捷方法，方便开发者调用
+	- sdk一直在更新，有些api方法还没包含在sdk中，这时只能通过taobao.core.call来进行调用
