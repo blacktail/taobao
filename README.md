@@ -18,18 +18,18 @@ var taobao = require('taobao');
 
 ```javascript
 taobao.config({
-	app_key: 'xxx',							//配置app key
-	app_secret: 'xxx',						//配置app secret
-	sandbox: false,							//配置是否为沙箱环境
-	session: '',							//配置session
-	httpRealHost: null,						//配置真实环境http HOST,默认为gw.api.taobao.com
-	httpRealPath: '/router/rest',			//配置真实环境http Path,默认为/router/rest
-	httpSandHost: 'gw.api.tbsandbox.com',	//配置沙箱环境http HOST,默认为gw.api.tbsandbox.com
-	httpSandPath: '/router/test',			//配置沙箱环境http Path,默认为/router/rest
-	httpsRealHost: 'eco.taobao.com',		//配置真实环境https HOST,默认为eco.taobao.com
-	httpsRealPath: '/router/rest',			//配置真实环境https Path,默认为/router/rest
-	httpsSandHost: 'gw.api.tbsandbox.com',	//配置沙箱环境https HOST,默认为gw.api.tbsandbox.com
-	httpsSandPath: '/'						//配置沙箱环境https Path,默认为/
+	app_key: 'xxx',							//配置app key， 必需
+	app_secret: 'xxx',						//配置app secret，必需
+	sandbox: false,							//配置是否为沙箱环境，可选，默认为false,
+	session: '',							//配置session,可选，只有需用户授权的api才须配置此参数
+	httpRealHost: null,						//配置真实环境http HOST,可选，默认为gw.api.taobao.com
+	httpRealPath: '/router/rest',			//配置真实环境http Path,可选，默认为/router/rest
+	httpSandHost: 'gw.api.tbsandbox.com',	//配置沙箱环境http HOST,可选，默认为gw.api.tbsandbox.com
+	httpSandPath: '/router/test',			//配置沙箱环境http Path,可选，默认为/router/rest
+	httpsRealHost: 'eco.taobao.com',		//配置真实环境https HOST,可选，默认为eco.taobao.com
+	httpsRealPath: '/router/rest',			//配置真实环境https Path,可选，默认为/router/rest
+	httpsSandHost: 'gw.api.tbsandbox.com',	//配置沙箱环境https HOST,可选，默认为gw.api.tbsandbox.com
+	httpsSandPath: '/'						//配置沙箱环境https Path,可选，默认为/
 });
 ```
 
