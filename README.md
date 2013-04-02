@@ -255,6 +255,14 @@ taobao.userBuyerGet({
 27. taobao.logisticsTraceSearch
 28. taobao.topatsDeliverySend
 
+#### 店铺API
+1. taobao.sellercatsListAdd
+2. taobao.sellercatsListGet
+3. taobao.sellercatsListUpdate
+4. taobao.shopGet
+5. taobao.shopRemainshowcaseGet
+6. taobao.shopUpdate
+7. taobao.shopcatsListGet
 
 ## Q & A
 1. *为什么设置sandbox为true时，获取返回数据时发生错误(比如404之类)，而在真实环境中正常？*
