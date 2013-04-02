@@ -12,16 +12,37 @@ npm install taobao
 
 ```javascript
 var taobao = require('taobao');
+taobao.config({
+	app_key: 'xxx',
+	app_secret: 'xxx'
+});
+
+taobao.core.call({
+	method: 'taobao.areas.get',
+	fields: 'id,type,name,parent_id,zip'
+}, function(data) {
+	console.log(data);
+});
 ```
 
-#### taobao.config
+#### 核心API</h3>
+1. [taobao.config](#taobao.config)
+2. [taobao.updateSession](#taobao.updateSession)
+2. [taobao.core.call](#taobao.core.call)
+3. taobao.core.signArgs
+4. taobao.core.callDefaultArg
+5. taobao.core.generateApi
+
+
+#### <a id="taobao.config">taobao.config</a>
+###### 配置sdk的全局默认参数
 
 ```javascript
 taobao.config({
-	app_key: 'xxx',							//配置app key， 必需
-	app_secret: 'xxx',						//配置app secret，必需
-	sandbox: false,							//配置是否为沙箱环境，可选，默认为false,
-	session: '',							//配置session,可选，只有需用户授权的api才须配置此参数
+	app_key: 'xxx',							//配置app key， 必需，可在调用API时传入不同值
+	app_secret: 'xxx',						//配置app secret，必需, 可在调用API时传入不同值
+	sandbox: false,							//配置沙箱环境，可选，默认为false, 可在调用API时传入不同值
+	session: '',							//配置session,可选，可在调用API时传入不同值
 	httpRealHost: null,						//配置真实环境http HOST,可选，默认为gw.api.taobao.com
 	httpRealPath: '/router/rest',			//配置真实环境http Path,可选，默认为/router/rest
 	httpSandHost: 'gw.api.tbsandbox.com',	//配置沙箱环境http HOST,可选，默认为gw.api.tbsandbox.com
@@ -32,35 +53,77 @@ taobao.config({
 	httpsSandPath: '/'						//配置沙箱环境https Path,可选，默认为/
 });
 ```
-
-#### taobao.updateSession
+#### <a id="taobao.updateSession">taobao.updateSession</a>
+###### 用于更新session配置
 
 ```javascript
 taobao.updateSession('xxxxx');
 ```
 
-#### 核心API</h3>
-1. taobao.core.config
-2. taobao.core.call
-3. taobao.core.signArgs
-4. taobao.core.callDefaultArg
+#### <a id="taobao.core.call">taobao.core.call</a>
+###### api调用核心函数，所有api都可用此函数调用
+###### taobao.core.call([httpArgs], args, callback);
 
 ```javascript
+// 调用时http参数对象可整体省略
 taobao.core.call({
-	method: 'get',				//指定http method, 各个API不一样，请参阅淘宝API文档
-	protocol: 'http'			//指定协议，支持http, https
+	method: 'get',				//可选，默认为get, 各个API需要的method可能不一样，请参阅淘宝API文档
+	protocol: 'http',			//可选，默认为http, 指定协议，支持http, https
+	sandbox: false				//可选，默认为false, 指定是否为沙箱环境，可通过taobao.config配置默认值
 }, {
-	 method : 'taobao.taobaoke.items.get',	//api方法
-	 format: 'json',			//返回数据格式，可为json或xml
-     
-     //参阅淘宝API文档传入各API相关的参数
-	 args1: xxx,
-	 args2: xxx,
-	 ...
+	method : 'taobao.taobaoke.items.get',	//必需，api方法名
+	format: 'json',							//可选，默认为json, 返回数据格式，可为json或xml
+	timestamp: '2012-03-15 21:00:00',		//可选，默认为调用方法时的时间 *保持默认就好*
+	app_key: 'xxxx',						//必需，可通过taobao.config配置默认值
+	app_secret: 'xxxxx',					//必需，可通过taobao.config配置默认值
+	v: '2.0',								//可选，默认为2.0 *保持默认就好*
+	sign_method: 'md5',						//可选，默认为md5,目前sdk只支持md5 *保持默认就好*
+	session: 'xxx',							//可选，可通过taobao.config配置默认值
+
+	//参阅淘宝API文档传入各API相关的参数	
+	args1: xxx,
+	args2: xxx,
+	...
 }, function(data) {				//若format为json, 则data为解析后的JSON对象，否则data为字符串(一般为xml,取决于API)
 	console.log(data)
 });
 ```
+
+
+```javascript
+// https调用方式
+taobao.core.call({
+	protocol: 'https',			//可选，默认为http, 指定协议，支持http, https
+}, {
+	method : 'taobao.taobaoke.items.get',	//必需，api方法名
+	//参阅淘宝API文档传入各API相关的参数	
+	args1: xxx,
+	args2: xxx,
+	...
+}, function(data) {				//若format为json, 则data为解析后的JSON对象，否则data为字符串(一般为xml,取决于API)
+	console.log(data)
+});
+```
+
+
+```javascript
+// 省略http参数对象调用
+taobao.core.call({
+	method : 'taobao.taobaoke.items.get',	//必需，api方法名
+	//参阅淘宝API文档传入各API相关的参数	
+	args1: xxx,
+	args2: xxx,
+	...
+}, function(data) {				//若format为json, 则data为解析后的JSON对象，否则data为字符串(一般为xml,取决于API)
+	console.log(data)
+});
+```
+  
+  
+  
+### API快捷调用
+### taobao.apiMethod( [httpArgs], args, callback )
+###### 参数说明参考[taobao.core.call](#taobao.core.call)
 
 #### 用户API
 1. taobao.userBuyerGet
