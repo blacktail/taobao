@@ -6,7 +6,8 @@ var _ = require('underscore'),
 	trade = require('./lib/trade'),
 	traderate = require('./lib/traderate'),
 	logistics = require('./lib/logistics'),
-	shop = require('./lib/shop');
+	shop = require('./lib/shop'),
+	fenxiao = require('./lib/fenxiao');
 
 module.exports = {
 	config: function (config) {
@@ -22,4 +23,4 @@ module.exports = {
 	core: core
 };
 
-_.extend(module.exports, user, itemcats, item, trade, traderate, logistics, shop);
+_.extend(module.exports, user, itemcats, item, trade, traderate, logistics, shop, fenxiao);
