@@ -332,6 +332,18 @@ taobao.userBuyerGet({
 65. taobao.scitemQuery
 66. taobao.scitemUpdate
 
+#### 旺旺API
+1. taobao.wangwangEserviceAvgwaittimeGet
+2. taobao.wangwangEserviceChatpeersGet
+3. taobao.wangwangEserviceEvalsGet
+4. taobao.wangwangEserviceEvaluationGet
+5. taobao.wangwangEserviceGroupmemberGet
+6. taobao.wangwangEserviceLoginlogsGet
+7. taobao.wangwangEserviceNoreplynumGet
+8. taobao.wangwangEserviceOnlinetimeGet
+9. taobao.wangwangEserviceReceivenumGet
+10. taobao.wangwangEserviceStreamweigthsGet
+
 
 ## Q & A
 1. *为什么设置sandbox为true时，获取返回数据时发生错误(比如404之类)，而在真实环境中正常？*
