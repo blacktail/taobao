@@ -344,6 +344,20 @@ taobao.userBuyerGet({
 9. taobao.wangwangEserviceReceivenumGet
 10. taobao.wangwangEserviceStreamweigthsGet
 
+#### 淘客API
+1. taobao.taobaokeCaturlGet
+2. taobao.taobaokeItemsCouponGet
+3. taobao.taobaokeItemsDetailGet
+4. taobao.taobaokeItemsGet
+5. taobao.taobaokeItemsRelateGet
+6. taobao.taobaokeListurlGet
+7. taobao.taobaokeReportGet
+8. taobao.taobaokeShopsGet
+9. taobao.taobaokeShopsRelateGet
+10. taobao.taobaokeWidgetItemsConvert
+11. taobao.taobaokeWidgetShopsConvert
+12. taobao.taobaokeWidgetUrlConvert
+
 
 ## Q & A
 1. *为什么设置sandbox为true时，获取返回数据时发生错误(比如404之类)，而在真实环境中正常？*
