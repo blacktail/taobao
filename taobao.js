@@ -13,7 +13,7 @@ var _ = require('underscore'),
 
 module.exports = {
 	config: function (config) {
-		core.config(config);
+		core.config (config);
 	},
 
 	updateSession: function(session) {
