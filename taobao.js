@@ -1,5 +1,5 @@
 var _ = require('underscore'),
-	core = require  ('./lib/core'),
+	core = require('./lib/core'),
 	user = require('./lib/user'),
 	itemcats = require('./lib/itemcats'),
 	item = require('./lib/item'),
