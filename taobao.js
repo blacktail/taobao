@@ -1,7 +1,7 @@
 var _ = require('underscore'),
 	core = require('./lib/core'),
 	user = require('./lib/user'),
-	itemcats = require('./lib/itemcats'),
+	itemcats = require   ('./lib/itemcats'),
 	item = require('./lib/item'),
 	trade = require('./lib/trade'),
 	traderate = require('./lib/traderate'),
