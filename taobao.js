@@ -9,7 +9,7 @@ var _ = require('underscore'),
 	shop = require('./lib/shop'),
 	fenxiao = require('./lib/fenxiao'),
 	wangwang = require('./lib/wangwang'),
-	taoke = require('./lib/taoke');
+	taoke = require   ('./lib/taoke');
 
 module.exports = {
 	config: function (config) {
