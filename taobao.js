@@ -9,7 +9,10 @@ var _ = require('underscore'),
 	shop = require('./lib/shop'),
 	fenxiao = require('./lib/fenxiao'),
 	wangwang = require('./lib/wangwang'),
-	taoke = require('./lib/taoke');
+	taoke = require('./lib/taoke'),
+	notify = require('./lib/notify'),
+	tools = require('./lib/tools'),
+	wlb = require('./lib/wlb');
 
 module.exports = {
 	config: function (config) {
@@ -25,4 +28,5 @@ module.exports = {
 	core: core
 };
 
-_.extend(module.exports, user, itemcats, item, trade, traderate, logistics, shop, fenxiao, wangwang, taoke);
+_.extend(module.exports, user, itemcats, item, trade, traderate, logistics, shop, fenxiao, wangwang, taoke,
+	notify, tools, wlb);

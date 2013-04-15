@@ -358,6 +358,68 @@ taobao.userBuyerGet({
 11. taobao.taobaokeWidgetShopsConvert
 12. taobao.taobaokeWidgetUrlConvert
 
+#### 主动通知业务API
+1. taobao.cometDiscardinfoGet
+2. taobao.incrementAuthorizeMessageGet
+3. taobao.incrementCustomerPermit
+4. taobao.incrementCustomerStop
+5. taobao.incrementCustomersGet
+6. taobao.incrementItemsGet
+7. taobao.incrementRefundsGet
+8. taobao.incrementTradesGet
+9. taobao.topatsIncrementMessagesGet
+
+#### 工具类API
+1. taobao.appipGet
+2. taobao.feedbackAdd
+3. taobao.kfcKeywordSearch
+4. taobao.timeGet
+5. taobao.topatsResultGet
+6. taobao.topatsTaskDelete
+7. taobao.topatsTasksGet
+
+#### 物流宝API
+1. taobao.wlbInventoryDetailGet
+2. taobao.wlbInventorySync
+3. taobao.wlbInventorylogQuery
+4. taobao.wlbItemAdd
+5. taobao.wlbItemAuthorizationAdd
+6. taobao.wlbItemAuthorizationDelete
+7. taobao.wlbItemAuthorizationQuery
+8. taobao.wlbItemBatchQuery
+9. taobao.wlbItemCombinationCreate
+10. taobao.wlbItemCombinationDelete
+11. taobao.wlbItemCombinationGet
+12. taobao.wlbItemConsignmentCreate
+13. taobao.wlbItemConsignmentDelete
+14. taobao.wlbItemConsignmentPageGet
+15. taobao.wlbItemDelete
+16. taobao.wlbItemGet
+17. taobao.wlbItemMapGet
+18. taobao.wlbItemMapGetByExtentity
+19. taobao.wlbItemQuery
+20. taobao.wlbItemSynchronize
+21. taobao.wlbItemSynchronizeDelete
+22. taobao.wlbItemUpdate
+23. taobao.wlbNotifyMessageConfirm
+24. taobao.wlbNotifyMessagePageGet
+25. taobao.wlbOrderCancel
+26. taobao.wlbOrderConsign
+27. taobao.wlbOrderCreate
+28. taobao.wlbOrderPageGet
+29. taobao.wlbOrderScheduleRuleAdd
+30. taobao.wlbOrderScheduleRuleUpdate
+31. taobao.wlbOrderitemPageGet
+32. taobao.wlbOrderscheduleruleDelete
+33. taobao.wlbOrderscheduleruleQuery
+34. taobao.wlbOrderstatusGet
+35. taobao.wlbOutInventoryChangeNotify
+36. taobao.wlbReplenishStatistics
+37. taobao.wlbSubscriptionQuery
+38. taobao.wlbTmsorderQuery
+39. taobao.wlbTradeorderGet
+40. taobao.wlbWlborderGet
+
 
 ## Q & A
 1. *为什么设置sandbox为true时，获取返回数据时发生错误(比如404之类)，而在真实环境中正常？*
