@@ -3,6 +3,8 @@ taobao sdk
 
 [taobao openapi](http://open.taobao.com/doc/category_list.htm?spm=0.0.0.0.0QXifK&id=102) sdk for node
 
+[![Build Status](https://secure.travis-ci.org/blacktail/taobao.png?branch=master)](http://travis-ci.org/blacktail/taobao)
+
 ## 1 安装
 
 npm install taobao
