@@ -14,7 +14,8 @@ var _ = require('underscore'),
 	tools = require('./lib/tools'),
 	wlb = require('./lib/wlb'),
 	simba = require('./lib/simba'),
-	favorite = require('./lib/favorite');
+	favorite = require('./lib/favorite'),
+	jipiao = require('./lib/jipiao');
 
 module.exports = {
 	config: function (config) {
@@ -31,4 +32,4 @@ module.exports = {
 };
 
 _.extend(module.exports, user, itemcats, item, trade, traderate, logistics, shop, fenxiao, wangwang, taoke,
-	notify, tools, wlb, simba, favorite);
+	notify, tools, wlb, simba, favorite, jipiao);
