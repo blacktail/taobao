@@ -15,7 +15,22 @@ var _ = require('underscore'),
 	wlb = require('./lib/wlb'),
 	simba = require('./lib/simba'),
 	favorite = require('./lib/favorite'),
-	jipiao = require('./lib/jipiao');
+	jipiao = require('./lib/jipiao'),
+	ump = require('./lib/ump'),
+	udp = require('./lib/udp'),
+	hotel = require('./lib/hotel'),
+	picture = require('./lib/picture'),
+	subuser = require('./lib/subuser'),
+	vas = require('./lib/vas'),
+	refund = require('./lib/refund'),
+	recommend = require('./lib/recommend'),
+	widget = require('./lib/widget'),
+	alipay = require('./lib/alipay'),
+	tmall = require('./lib/tmall'),
+	rds = require('./lib/rds'),
+	travel = require('./lib/travel'),
+	caipiao = require('./lib/caipiao'),
+	bill = require('./lib/bill');
 
 module.exports = {
 	config: function (config) {
@@ -32,4 +47,5 @@ module.exports = {
 };
 
 _.extend(module.exports, user, itemcats, item, trade, traderate, logistics, shop, fenxiao, wangwang, taoke,
-	notify, tools, wlb, simba, favorite, jipiao);
+	notify, tools, wlb, simba, favorite, jipiao, ump, udp, hotel, picture, subuser, vas, refund, recommend,
+	widget, alipay, tmall, rds, travel, caipiao, bill);
