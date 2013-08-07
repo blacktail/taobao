@@ -48,11 +48,11 @@ taobao.config({
 	httpRealHost: null,						//配置真实环境http HOST,可选，默认为gw.api.taobao.com
 	httpRealPath: '/router/rest',			//配置真实环境http Path,可选，默认为/router/rest
 	httpSandHost: 'gw.api.tbsandbox.com',	//配置沙箱环境http HOST,可选，默认为gw.api.tbsandbox.com
-	httpSandPath: '/router/test',			//配置沙箱环境http Path,可选，默认为/router/rest
+	httpSandPath: '/router/rest',			//配置沙箱环境http Path,可选，默认为/router/rest
 	httpsRealHost: 'eco.taobao.com',		//配置真实环境https HOST,可选，默认为eco.taobao.com
 	httpsRealPath: '/router/rest',			//配置真实环境https Path,可选，默认为/router/rest
 	httpsSandHost: 'gw.api.tbsandbox.com',	//配置沙箱环境https HOST,可选，默认为gw.api.tbsandbox.com
-	httpsSandPath: '/'						//配置沙箱环境https Path,可选，默认为/
+	httpsSandPath: '/router/rest'						//配置沙箱环境https Path,可选，默认为/
 });
 ```
 #### <a id="taobao.updateSession">taobao.updateSession</a>
