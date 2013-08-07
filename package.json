@@ -1,23 +1,26 @@
 {
-	"name" : "taobao",
-	"description" : "taobao openapi sdk for node",
-	"keywords":["taobao","sdk","openapi","node-taobao","top","TaobaoClient","taobaoke"],
-	"version" : "1.0.0",
+	"name": "taobao",
+	"description": "taobao openapi sdk for node",
+	"keywords": ["taobao","sdk","openapi","node-taobao","top","TaobaoClient","taobaoke"],
+	"version": "1.0.1",
 	"homepage": "http://github.com/blacktail/taobao.git",
-	"author" : {
-		"name" : "blacktail",
-		"email" : "mr.zhangping@gmail.com"
+	"author": {
+		"name": "blacktail",
+		"email": "mr.zhangping@gmail.com"
 	},
-	"repository":{
-		"type" : "git",
-		"url" : "http://github.com/blacktail/taobao.git"
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/blacktail/taobao.git"
 	},
 	"main": "./index",
-	"contributors" : [{
-		"name" : "blacktail",
-		"email" : "mr.zhangping@gmail.com"
+	"contributors": [{
+		"name": "blacktail",
+		"email": "mr.zhangping@gmail.com"
+	}, {
+		"name": "RixTox",
+		"email": "rixtox@gmail.com"
 	}],
-	"dependencies" : {
+	"dependencies": {
 		"underscore": "~1.4.4",
 		"moment": "~2.0.0",
 		"MD5": "~1.0.3"
