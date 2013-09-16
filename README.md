@@ -7,10 +7,30 @@ taobao sdk
 
 ## 1 安装
 
-npm install taobao
+```
+$ npm install taobao
+```
 
+## 2 开发&测试
 
-## 2 使用
+```
+$ cd taobao
+$ npm install
+```
+
+测试
+
+```
+$ make test
+```
+
+覆盖率
+
+```
+$ make test-cov
+```
+
+## 3 使用
 
 ```javascript
 var taobao = require('taobao');
@@ -28,15 +48,15 @@ taobao.core.call({
 ```
 
 #### 核心API</h3>
-1. [taobao.config](#taobao.config)
-2. [taobao.updateSession](#taobao.updateSession)
-2. [taobao.core.call](#taobao.core.call)
+1. [taobao.config](#taobaoconfig)
+2. [taobao.updateSession](#taobaoupdatesession)
+2. [taobao.core.call](#taobaocorecall)
 3. taobao.core.signArgs
 4. taobao.core.callDefaultArg
 5. taobao.core.generateApi
 
 
-#### <a id="taobao.config">taobao.config</a>
+#### taobao.config
 ###### 配置sdk的全局默认参数
 
 ```javascript
@@ -55,14 +75,14 @@ taobao.config({
 	httpsSandPath: '/router/rest'						//配置沙箱环境https Path,可选，默认为/
 });
 ```
-#### <a id="taobao.updateSession">taobao.updateSession</a>
+#### taobao.updateSession
 ###### 用于更新session配置
 
 ```javascript
 taobao.updateSession('xxxxx');
 ```
 
-#### <a id="taobao.core.call">taobao.core.call</a>
+#### taobao.core.call
 ###### api调用核心函数，所有api都可用此函数调用
 ###### taobao.core.call([httpArgs], args, callback);
 
@@ -125,7 +145,7 @@ taobao.core.call({
   
 ### API快捷调用
 ### taobao.apiMethod( [httpArgs], args, callback )
-###### 参数说明参考[taobao.core.call](#taobao.core.call)
+###### 参数说明参考[taobao.core.call](#taobaocorecall)
 
 #### 用户API
 1. taobao.userBuyerGet
