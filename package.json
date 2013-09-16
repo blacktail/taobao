@@ -31,6 +31,7 @@
 		"supertest": "0.7.1"
 	},
 	"scripts": {
+		"test": "make test",
 		"prepublish": "npm prune"
 	},
 	"engines": {
