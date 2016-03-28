@@ -2,7 +2,7 @@
 	"name": "taobao",
 	"description": "taobao openapi sdk for node",
 	"keywords": ["taobao", "sdk", "openapi", "node-taobao", "top", "TaobaoClient", "taobaoke"],
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"homepage": "http://github.com/blacktail/taobao.git",
 	"author": {
 		"name": "blacktail",
@@ -34,6 +34,6 @@
 		"prepublish": "npm prune"
 	},
 	"engines": {
-		"node": ">=0.10.0"
+		"node": ">=0.10"
 	}
 }
