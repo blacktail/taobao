@@ -102,6 +102,7 @@ describe('core.js', function() {
 				fields: 'id,type,name,parent_id,zip'
 			}, function (data) {
 				expect(data).to.be.an('object');
+				console.log(data);
 				expect(data.areas_get_response).to.be.an('object');
 				expect(data.areas_get_response.areas).to.be.an('object');
 				expect(data.areas_get_response.areas.area).to.be.an('array');
