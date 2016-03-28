@@ -3,8 +3,8 @@ var lib = '../' + (process.env.CODE_COV ? 'lib-cov' : 'lib');
 var core = require(lib + '/core'),
 	chai = require('chai'),
 	expect = chai.expect,
-	APP_KEY = '21439599',
-	APP_SECRET = '87786c8e214faa34a137b1def4cd71da';
+	APP_KEY = '23333843',
+	APP_SECRET = 'c4bba86a87a44e7a35517467488c7303';
 
 chai.should();
 
