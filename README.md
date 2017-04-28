@@ -72,7 +72,7 @@ taobao.config({
 	httpsRealHost: 'eco.taobao.com',		//配置真实环境https HOST,可选，默认为eco.taobao.com
 	httpsRealPath: '/router/rest',			//配置真实环境https Path,可选，默认为/router/rest
 	httpsSandHost: 'gw.api.tbsandbox.com',	//配置沙箱环境https HOST,可选，默认为gw.api.tbsandbox.com
-	httpsSandPath: '/router/rest'						//配置沙箱环境https Path,可选，默认为/
+	httpsSandPath: '/router/rest'					//配置沙箱环境https Path,可选，默认为/
 });
 ```
 #### taobao.updateSession
@@ -99,7 +99,7 @@ taobao.core.call({
 	app_key: 'xxxx',						//必需，可通过taobao.config配置默认值
 	app_secret: 'xxxxx',					//必需，可通过taobao.config配置默认值
 	v: '2.0',								//可选，默认为2.0 *保持默认就好*
-	sign_method: 'md5',						//可选，默认为md5,目前sdk只支持md5 *保持默认就好*
+	sign_method: 'md5',						//可选，默认为md5，可为md5或hmac
 	session: 'xxx',							//可选，可通过taobao.config配置默认值
 
 	//参阅淘宝API文档传入各API相关的参数	
